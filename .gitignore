@@ -13,6 +13,13 @@ ENV/
 instance/
 .webassets-cache
 
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+
 # IDEs
 .vscode/
 .idea/
@@ -22,5 +29,8 @@ instance/
 # OS
 .DS_Store
 Thumbs.db
+
+# Production
+*.pid
 
 

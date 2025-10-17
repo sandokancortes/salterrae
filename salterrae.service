@@ -1,0 +1,22 @@
+[Unit]
+Description=Gunicorn instance to serve Sal Terrae
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/salterrae
+Environment="PATH=/var/www/salterrae/venv/bin"
+ExecStart=/var/www/salterrae/venv/bin/gunicorn --config gunicorn_config.py app:app
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=append:/var/log/salterrae/gunicorn.log
+StandardError=append:/var/log/salterrae/gunicorn_error.log
+
+[Install]
+WantedBy=multi-user.target
+
