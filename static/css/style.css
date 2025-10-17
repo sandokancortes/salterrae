@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: #070707;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
+
+.content {
+    flex: 1;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffcf4;
+    padding: 20px;
+}
+
+.content-div {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ .content-cita-bible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+a:hover{
+    text-decoration: none;
+    color: #6e1301;
+}
+
+.youtube-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.youtube-link a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #cd3725;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.youtube-link a:hover {
+    background-color: #a12d1f;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-link svg {
+    flex-shrink: 0;
+}
+
+.image-container img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}
+
+.footer {
+    height: 40px;
+    background-color: #070707;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+

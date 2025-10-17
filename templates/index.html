@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal Terræ - Inicio</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/st_logo.png') }}" alt="Logotipo">
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="content-div image-container">
+            <img src="{{ url_for('static', filename='images/banner.png') }}" alt="Banner">
+        </div>
+        <div class="content-cita-bible">
+            <a href="https://bibliastraubinger.com/mateo/#footnote-9889" target="_blank">
+                <h4>Mateo 5:13-14</h4>
+                <p><sup>13</sup> Vosotros sois la sal de la tierra. Mas si la sal pierde su sabor,</p>
+                <p>¿con qué será salada? Para nada vale ya, sino para que, tirada fuera, la pisen los hombres</p>
+                <p><sup>14</sup>  Vosotros sois la luz del mundo. No puede esconderse una ciudad situada sobre una montaña.</p>
+            </a>
+        </div>
+        <div class="youtube-link">
+            <a href="https://www.youtube.com/@SalTerrae-IHS/videos" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                <span>Visita nuestro canal de YouTube</span>
+            </a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>[ Sal Terræ {{ year }} ]</p>
+    </footer>
+</body>
+</html>
+
+
